@@ -15,6 +15,8 @@ while True:
 
     tokens = document.analyze_syntax().tokens
 
+    sentences = document.sentences
+    print "Text had {} sentences".format(len(sentences))
     print("Text: {}".format(text))
     if sentiment.score < 0:
         mood = "sad"
